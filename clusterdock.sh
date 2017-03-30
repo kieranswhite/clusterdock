@@ -90,6 +90,7 @@ clusterdock_run() {
       ${REGISTRY_INSECURE} \
       ${REGISTRY_USERNAME} \
       ${REGISTRY_PASSWORD} \
+      -p 0.0.0.0:10000:10000 \
       -v /tmp/clusterdock \
       -v /etc/hosts:/etc/hosts \
       -v /etc/localtime:/etc/localtime \
